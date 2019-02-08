@@ -2,40 +2,19 @@
 
 A simple test framework module that can be used to create unit and integration tests on Magento 1.
 
+## Add required-dev test modules to your project
+
+      "require-dev": {
+        "onestic/testframework": "0.1.0",
+        "phpunit/phpunit": "^6.0"
+      },
+
 ## Prepare your module for your tests
 
  - Create a `Test` folder under your module folder
- - Under this `Test` folder create the following files:
-
-`phpunit.xml` with the following content:
-
-    <?xml version="1.0"?>
-    <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.1/phpunit.xsd"
-             colors="true"
-             bootstrap="bootstrap.php"
-             backupGlobals="false"
-             verbose="true"
-    >
-        <testsuites>
-            <testsuite name="Magento Integration Tests">
-                <directory>.</directory>
-            </testsuite>
-        </testsuites>
-
-    </phpunit>
-
-Note that you can change most of the file here, the important part being the `bootstrap.php` file declaration.
-
-`bootstrap.php` with the following content:
-
-    <?php
-
-    require __DIR__ . '/../../../../../../lib/DigitalPianism/TestFramework/Helper/Magento.php';
-    DigitalPianism_TestFramework_Helper_Magento::bootstrap();
-
-Please note that you may have to adapt the link to `lib/DigitalPianism/TestFramework/Helper/Magento.php` depending on your Magento structure.
-
+ 
+ - Update /dev/tests/integration/phpunit.xml with your module paths if vendor isn't Onestic
+ 
 ## Controller test sample
 
 Here is a sample of a controller test:
