@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/6.5/phpunit.xsd"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        colors="true"
+        bootstrap="bootstrap.php"
+        backupGlobal="false"
+         verbose="true"
+>
+    <testsuite name="Integration Tests">
+        <directory suffix="Test.php">../../../app/code/local/Onestic/*/Test/Integration</directory>
+        <!--<directory suffix="Test.php">../../../app/code/local/[other vendor]/*/Test/Integration</directory>-->
+    </testsuite>
+    <php>
+        <ini name="xdebug.max_nesting_level" value="200"/>
+    </php>
+    <filter>
+        <whitelist addUncoveredFilesFromWhiteList="true">
+            <directory suffix=".php">../../../app/code/local/Onestic/*/Helper</directory>
+            <directory suffix=".php">../../../app/code/local/Onestic/*/Model</directory>
+            <directory suffix=".php">../../../app/code/local/Onestic/*/Block</directory>
+            <!--
+            <directory suffix=".php">../../../app/code/local/[other vendor]/*/Helper</directory>
+            <directory suffix=".php">../../../app/code/local/[other vendor]/*/Model</directory>
+            <directory suffix=".php">../../../app/code/local/[other vendor]/*/Block</directory>
+            -->
+            <exclude>
+                <directory>../../../app/code/local/Onestic/*/Test</directory>
+                <!--<directory>../../../app/code/local/[other vendor]/*/Test</directory>-->
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>

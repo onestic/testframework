@@ -1,8 +1,8 @@
 {
-  "name": "digitalpianism/testframework",
+  "name": "onestic/testframework",
   "type": "magento-module",
   "license":"OSL-3.0",
-  "description":"A simple test framework module to develop integration and unit tests on Magento 1",
+  "description":"A simple test framework module to develop integration and unit tests on Magento 1. Forked from digitalpianism/testframework.",
   "require": {
     "php": ">=5.3",
     "magento-hackathon/magento-composer-installer": "*"

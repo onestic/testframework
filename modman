@@ -1,2 +1,3 @@
-# DigitalPianism_TestFramework
-lib/DigitalPianism/TestFramework    lib/DigitalPianism/TestFramework
+dev/tests/integration/bootstrap.php dev/tests/integration/bootstrap.php
+dev/tests/integration/phpunit.xml   dev/tests/integration/phpunit.xml  
+lib/DigitalPianism                  lib/DigitalPianism                 
