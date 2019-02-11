@@ -5,7 +5,7 @@ A simple test framework module that can be used to create unit and integration t
 ## Add required-dev test modules to your project
 
       "require-dev": {
-        "onestic/testframework": "0.1.0",
+        "onestic/testframework": "0.1.*",
         "phpunit/phpunit": "^6.0"
       },
 
@@ -13,7 +13,7 @@ A simple test framework module that can be used to create unit and integration t
 
  - Create a `Test` folder under your module folder
  
- - Update /dev/tests/integration/phpunit.xml with your module paths if vendor isn't Onestic
+ - Copy _/dev/tests/integration/phpunit.xml.sample_ to _/dev/tests/integration/phpunit.xml_ and update it with your module paths if vendor isn't Onestic.
  
 ## Controller test sample
 
