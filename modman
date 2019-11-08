@@ -1,3 +1,5 @@
 dev/tests/integration/bootstrap.php      dev/tests/integration/bootstrap.php     
 dev/tests/integration/phpunit.xml.sample dev/tests/integration/phpunit.xml.sample
+dev/tests/unit/bootstrap.php             dev/tests/unit/bootstrap.php
+dev/tests/unit/phpunit.xml.sample        dev/tests/unit/phpunit.xml.sample
 lib/DigitalPianism                       lib/DigitalPianism                      
